@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
   </head>
   <body>
     <div class="row">
@@ -48,14 +49,14 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
-        let saldo =100000000;
-        let harga =50000000;
+        let saldo = 100000000;
+        let harga = 50000000;
         function burungku() {
             let konfirmasi = confirm("apakah anda yakin ingin membeli ini??");
             if (konfirmasi === true) {
                 if (saldo >= harga) {
                     saldo -= harga;
-                    alert("Terima kasih sudah membeli");
+                    alert("Terima kasih sudah membeli!\nSisa saldo: Rp." + saldo.toLocaleString());
                 } else {
                     alert("Saldo anda tidak cukup!");
                 }
