@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .notif {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #4caf50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        input:valid ~ button:focus ~ .notif {
+            display: block;
+        }
+        form {
+            margin-top: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="off">
+        <input type="text" id="kotakMasukan" placeholder="Masukkan sesuatu..." required>
+        <button type="submit">Klik</button>
+        <div class="notif">Notifikasi: Input berhasil dikirim!</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>latihan dasar</h1>
+    <p>Masukan Nama : <input type="text" id="masukan" placeholder="masukan">
+    <button onclick="apa()" class="btn btn-primary">Klik</button></p>
+    <script>
+        function apa(){
+            const nama = document.getElementById('masukan').value.();
+            if (!nama) {
+                alert('nama tidak boleh kosong');
+                return;
+            }
+            const konfirmasi = confirm("Apakah benar ini yang Anda cari: " + nama + " ?");
+            if (konfirmasi) {
+                alert("haai " + nama);
+            } else {
+                alert("Dibatalkan.");
+            }
+        }
+    </script>
+</body>
+</html>
