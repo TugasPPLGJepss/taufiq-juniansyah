@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kalkulator Biaya Produksi</title>
 </head>
 <body>
     <script>
         let namaToko = "roti cilss";
-        let JumlahBatch = 5
-        let KebutuhanTeriguperBatch = 1500
-        let hargaTeriguPer1000g = 12000
-        let kebutuhanTelurPerBatch = 10
-        let hargaTelurPerButir = 2000
-        let kebutuhanMentegaPerBatch = 300
-        let hargaMentegaPer100g = 4500
+        let jumlahBatch = 5;
+        let kebutuhanTeriguPerBatch = 1500;
+        let hargaTeriguPer1000g = 12000;
+        let kebutuhanTelurPerBatch = 10;
+        let hargaTelurPerButir = 2000;
+        let kebutuhanMentegaPerBatch = 300;
+        let hargaMentegaPer100g = 4500;
 
         let totalTerigu = kebutuhanTeriguPerBatch * jumlahBatch;
         let totalTelur = kebutuhanTelurPerBatch * jumlahBatch;
         let totalMentega = kebutuhanMentegaPerBatch * jumlahBatch;
 
-        let biayaPerGramTerigu = hargaTeriguPer1000g / 1000
-        let biayaPerGramMentega = hargaMentegaPer100g / 100
-        let totalBiayaTerigu = totalTerigu * biayaPerGramTerigu
-        let totalBiayaTelur = totalTelur * hargaTelurPerButir
-        let totalBiayaMentega = totalMentega * biayaPerGramMentega
-        let totalBiayaProduksi = totalBiayaTerigu + totalBiayaTelur + totalBiayaMentega
+        let biayaPerGramTerigu = hargaTeriguPer1000g / 1000;
+        let biayaPerGramMentega = hargaMentegaPer100g / 100;
+        let totalBiayaTerigu = totalTerigu * biayaPerGramTerigu;
+        let totalBiayaTelur = totalTelur * hargaTelurPerButir;
+        let totalBiayaMentega = totalMentega * biayaPerGramMentega;
+        let totalBiayaProduksi = totalBiayaTerigu + totalBiayaTelur + totalBiayaMentega;
 
         document.write("total Biaya Terigu:" + totalTerigu * biayaPerGramTerigu + "<br>");
         document.write("total Biaya Telur:" + totalTelur * hargaTelurPerButir + "<br>");
